@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background: #262626;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+}
+img{
+    height: 40px;
+    padding: 10px;
+}
+ul li{
+    position: relative;
+    display: block;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    color: #777;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #4f5052;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+ul li:nth-child(1):before{
+    background-color: #395593;
+}
+ul li:nth-child(2):before{
+    background-color: #924CC7;
+}
+ul li:nth-child(3):before{
+    background-color: #0A66C2;
+}
+ul li:nth-child(4):before{
+    background-color: #00A2E4;
+}
+ul li:nth-child(5):before{
+    background-color: #ff1a1a;
+}
+
+ul li:hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0a82ed;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(1):hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #395593;
+    transform: scale(1.2);
+}
+ul li:nth-child(2):hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #924CC7;
+    transform: scale(1.2);
+}
+ul li:nth-child(3):hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #0A66C2;
+    transform: scale(1.2);
+}
+ul li:nth-child(4):hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #00A2E4;
+    transform: scale(1.2);
+}
+ul li:nth-child(5):hover:before{
+    filter: blur(4px);
+    box-shadow: 0 0 15 #ff1a1a;
+    transform: scale(1.2);
+}
+
+ul li:nth-child(1):hover{
+    color: #395593;
+    box-shadow: 0 0 15px #395593;
+    text-shadow: 0 0 15px #395593;
+}
+ul li:nth-child(2):hover{
+    color: #f704ff;
+    box-shadow: 0 0 15px #924CC7;
+    text-shadow: 0 0 15px #f704ff;
+}
+ul li:nth-child(3):hover{
+    color: #0A66C2;
+    box-shadow: 0 0 15px #0A66C2;
+    text-shadow: 0 0 15px #0A66C2;
+}
+ul li:nth-child(4):hover{
+    color: #00A2E4;
+    box-shadow: 0 0 15px #00A2E4;
+    text-shadow: 0 0 15px #00A2E4;
+}
+ul li:nth-child(5):hover{
+    color: #ff1a1a;
+    box-shadow: 0 0 15px #ff1a1a;
+    text-shadow: 0 0 15px #ff1a1a;
+}
